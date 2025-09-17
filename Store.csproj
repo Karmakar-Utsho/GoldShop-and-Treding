@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9589EA47-63F7-4CC5-8905-DED87A7CF8D9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Store</RootNamespace>
+    <AssemblyName>Store</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataQ\DatabaseQ.cs" />
+    <Compile Include="Forms\AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BillManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BillManagement.Designer.cs">
+      <DependentUpon>BillManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageInvestment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageInvestment.Designer.cs">
+      <DependentUpon>ManageInvestment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BuyEarring1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BuyEarring1.Designer.cs">
+      <DependentUpon>BuyEarring1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BuyEarring2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BuyEarring2.Designer.cs">
+      <DependentUpon>BuyEarring2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BuyEarring3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BuyEarring3.Designer.cs">
+      <DependentUpon>BuyEarring3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CartForm.Designer.cs">
+      <DependentUpon>CartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InvestmentSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InvestmentSection.Designer.cs">
+      <DependentUpon>InvestmentSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\JewellerySection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\JewellerySection.Designer.cs">
+      <DependentUpon>JewellerySection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MyEarring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MyEarring.Designer.cs">
+      <DependentUpon>MyEarring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MyUserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MyUserProfile.Designer.cs">
+      <DependentUpon>MyUserProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Necklace1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Necklace1.Designer.cs">
+      <DependentUpon>Necklace1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Necklace2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Necklace2.Designer.cs">
+      <DependentUpon>Necklace2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Necklace3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Necklace3.Designer.cs">
+      <DependentUpon>Necklace3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Necklaces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Necklaces.Designer.cs">
+      <DependentUpon>Necklaces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OrderVeiw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OrderVeiw.Designer.cs">
+      <DependentUpon>OrderVeiw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PaymentForm.Designer.cs">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductManagement.Designer.cs">
+      <DependentUpon>ProductManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductSellList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductSellList.Designer.cs">
+      <DependentUpon>ProductSellList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegistrationForm.Designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ring1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ring1.Designer.cs">
+      <DependentUpon>Ring1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ring2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ring2.Designer.cs">
+      <DependentUpon>Ring2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ring3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ring3.Designer.cs">
+      <DependentUpon>Ring3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Rings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Rings.Designer.cs">
+      <DependentUpon>Rings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SellGold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SellGold.Designer.cs">
+      <DependentUpon>SellGold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserManage.Designer.cs">
+      <DependentUpon>UserManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CartItem.cs" />
+    <Compile Include="Models\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserProfile.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BillManagement.resx">
+      <DependentUpon>BillManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageInvestment.resx">
+      <DependentUpon>ManageInvestment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BuyEarring1.resx">
+      <DependentUpon>BuyEarring1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BuyEarring2.resx">
+      <DependentUpon>BuyEarring2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BuyEarring3.resx">
+      <DependentUpon>BuyEarring3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CartForm.resx">
+      <DependentUpon>CartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InvestmentSection.resx">
+      <DependentUpon>InvestmentSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\JewellerySection.resx">
+      <DependentUpon>JewellerySection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MyEarring.resx">
+      <DependentUpon>MyEarring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MyUserProfile.resx">
+      <DependentUpon>MyUserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Necklace1.resx">
+      <DependentUpon>Necklace1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Necklace2.resx">
+      <DependentUpon>Necklace2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Necklace3.resx">
+      <DependentUpon>Necklace3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Necklaces.resx">
+      <DependentUpon>Necklaces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OrderVeiw.resx">
+      <DependentUpon>OrderVeiw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PaymentForm.resx">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductManagement.resx">
+      <DependentUpon>ProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductSellList.resx">
+      <DependentUpon>ProductSellList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ring1.resx">
+      <DependentUpon>Ring1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ring2.resx">
+      <DependentUpon>Ring2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ring3.resx">
+      <DependentUpon>Ring3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Rings.resx">
+      <DependentUpon>Rings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SellGold.resx">
+      <DependentUpon>SellGold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserManage.resx">
+      <DependentUpon>UserManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\rings2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\sign-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\earring1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\necklace3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\earring2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\earring3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\necklace1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\necklace2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\rings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\rings3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-09-17 at 19.07.04_f5178ac7.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

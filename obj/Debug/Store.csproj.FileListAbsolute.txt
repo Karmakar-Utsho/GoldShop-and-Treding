@@ -1,0 +1,101 @@
+C:\Users\msi\Music\Store\bin\Debug\Store.exe.config
+C:\Users\msi\Music\Store\bin\Debug\Store.exe
+C:\Users\msi\Music\Store\bin\Debug\Store.pdb
+C:\Users\msi\Music\Store\obj\Debug\Store.csproj.AssemblyReference.cache
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.RegistrationForm.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.LoginForm.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Properties.Resources.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.csproj.GenerateResource.cache
+C:\Users\msi\Music\Store\obj\Debug\Store.csproj.CoreCompileInputs.cache
+C:\Users\msi\Music\Store\obj\Debug\Store.exe
+C:\Users\msi\Music\Store\obj\Debug\Store.pdb
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.ResetPassword.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.exe.config
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.MyUserProfile.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.AdminDashboard.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.JewellerySection.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.MyEarring.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.Necklaces.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.Rings.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.BuyEarring1.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.CartForm.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.PaymentForm.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.BuyEarring2.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.BuyEarring3.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.InvestmentSection.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.SellGold.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.Necklace1.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.Necklace2.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.Necklace3.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.Ring1.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.Ring2.resources
+C:\Users\msi\Music\Store\obj\Debug\Store.Forms.Ring3.resources
+D:\Project\bin\Debug\Store.exe.config
+D:\Project\bin\Debug\Store.exe
+D:\Project\bin\Debug\Store.pdb
+D:\Project\obj\Debug\Store.csproj.AssemblyReference.cache
+D:\Project\obj\Debug\Store.Forms.AdminDashboard.resources
+D:\Project\obj\Debug\Store.Forms.BuyEarring1.resources
+D:\Project\obj\Debug\Store.Forms.BuyEarring2.resources
+D:\Project\obj\Debug\Store.Forms.BuyEarring3.resources
+D:\Project\obj\Debug\Store.Forms.CartForm.resources
+D:\Project\obj\Debug\Store.Forms.InvestmentSection.resources
+D:\Project\obj\Debug\Store.Forms.JewellerySection.resources
+D:\Project\obj\Debug\Store.Forms.MyEarring.resources
+D:\Project\obj\Debug\Store.Forms.MyUserProfile.resources
+D:\Project\obj\Debug\Store.Forms.Necklace1.resources
+D:\Project\obj\Debug\Store.Forms.Necklace2.resources
+D:\Project\obj\Debug\Store.Forms.Necklace3.resources
+D:\Project\obj\Debug\Store.Forms.Necklaces.resources
+D:\Project\obj\Debug\Store.Forms.PaymentForm.resources
+D:\Project\obj\Debug\Store.Forms.RegistrationForm.resources
+D:\Project\obj\Debug\Store.Forms.ResetPassword.resources
+D:\Project\obj\Debug\Store.Forms.Ring1.resources
+D:\Project\obj\Debug\Store.Forms.Ring2.resources
+D:\Project\obj\Debug\Store.Forms.Ring3.resources
+D:\Project\obj\Debug\Store.Forms.Rings.resources
+D:\Project\obj\Debug\Store.Forms.SellGold.resources
+D:\Project\obj\Debug\Store.LoginForm.resources
+D:\Project\obj\Debug\Store.Properties.Resources.resources
+D:\Project\obj\Debug\Store.csproj.GenerateResource.cache
+D:\Project\obj\Debug\Store.csproj.CoreCompileInputs.cache
+D:\Project\obj\Debug\Store.exe
+D:\Project\obj\Debug\Store.pdb
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\bin\Debug\Store.exe.config
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\bin\Debug\Store.exe
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\bin\Debug\Store.pdb
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.csproj.AssemblyReference.cache
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.exe.config
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.BuyEarring1.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.BuyEarring2.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.BuyEarring3.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.CartForm.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.InvestmentSection.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.JewellerySection.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.MyEarring.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.MyUserProfile.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.Necklace1.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.Necklace2.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.Necklace3.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.Necklaces.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.PaymentForm.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.RegistrationForm.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.ResetPassword.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.Ring1.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.Ring2.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.Ring3.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.Rings.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.SellGold.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.LoginForm.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Properties.Resources.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.csproj.GenerateResource.cache
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.csproj.CoreCompileInputs.cache
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.exe
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.pdb
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.AdminDashboard.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.ManageInvestment.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.BillManagement.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.OrderVeiw.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.ProductManagement.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Properties.ProductSellList.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Properties.UserManage.resources
