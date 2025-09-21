@@ -48,9 +48,11 @@
             // radio1g
             // 
             this.radio1g.AutoSize = true;
+            this.radio1g.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio1g.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.radio1g.Location = new System.Drawing.Point(136, 161);
             this.radio1g.Name = "radio1g";
-            this.radio1g.Size = new System.Drawing.Size(75, 20);
+            this.radio1g.Size = new System.Drawing.Size(91, 27);
             this.radio1g.TabIndex = 0;
             this.radio1g.TabStop = true;
             this.radio1g.Text = "1g Gold";
@@ -59,9 +61,11 @@
             // radio5g
             // 
             this.radio5g.AutoSize = true;
+            this.radio5g.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio5g.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.radio5g.Location = new System.Drawing.Point(136, 212);
             this.radio5g.Name = "radio5g";
-            this.radio5g.Size = new System.Drawing.Size(75, 20);
+            this.radio5g.Size = new System.Drawing.Size(91, 27);
             this.radio5g.TabIndex = 1;
             this.radio5g.TabStop = true;
             this.radio5g.Text = "5g Gold";
@@ -70,9 +74,11 @@
             // radio10g
             // 
             this.radio10g.AutoSize = true;
+            this.radio10g.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio10g.ForeColor = System.Drawing.Color.White;
             this.radio10g.Location = new System.Drawing.Point(136, 263);
             this.radio10g.Name = "radio10g";
-            this.radio10g.Size = new System.Drawing.Size(82, 20);
+            this.radio10g.Size = new System.Drawing.Size(100, 27);
             this.radio10g.TabIndex = 2;
             this.radio10g.TabStop = true;
             this.radio10g.Text = "10g Gold";
@@ -81,18 +87,21 @@
             // lblQuantity
             // 
             this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Location = new System.Drawing.Point(377, 295);
+            this.lblQuantity.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblQuantity.Location = new System.Drawing.Point(565, 165);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(44, 16);
+            this.lblQuantity.Size = new System.Drawing.Size(55, 23);
             this.lblQuantity.TabIndex = 3;
             this.lblQuantity.Text = "label1";
             this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblPlus
             // 
-            this.lblPlus.Location = new System.Drawing.Point(404, 287);
+            this.lblPlus.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlus.Location = new System.Drawing.Point(630, 156);
             this.lblPlus.Name = "lblPlus";
-            this.lblPlus.Size = new System.Drawing.Size(64, 32);
+            this.lblPlus.Size = new System.Drawing.Size(64, 36);
             this.lblPlus.TabIndex = 4;
             this.lblPlus.Text = "+";
             this.lblPlus.UseVisualStyleBackColor = true;
@@ -100,7 +109,8 @@
             // 
             // lblMinus
             // 
-            this.lblMinus.Location = new System.Drawing.Point(307, 287);
+            this.lblMinus.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMinus.Location = new System.Drawing.Point(492, 157);
             this.lblMinus.Name = "lblMinus";
             this.lblMinus.Size = new System.Drawing.Size(64, 32);
             this.lblMinus.TabIndex = 5;
@@ -110,9 +120,10 @@
             // 
             // btnBuyNow
             // 
-            this.btnBuyNow.Location = new System.Drawing.Point(358, 367);
+            this.btnBuyNow.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuyNow.Location = new System.Drawing.Point(540, 208);
             this.btnBuyNow.Name = "btnBuyNow";
-            this.btnBuyNow.Size = new System.Drawing.Size(84, 38);
+            this.btnBuyNow.Size = new System.Drawing.Size(100, 38);
             this.btnBuyNow.TabIndex = 6;
             this.btnBuyNow.Text = "Buy Now";
             this.btnBuyNow.UseVisualStyleBackColor = true;
@@ -120,9 +131,10 @@
             // 
             // btnSellGold
             // 
-            this.btnSellGold.Location = new System.Drawing.Point(656, 54);
+            this.btnSellGold.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSellGold.Location = new System.Drawing.Point(304, 351);
             this.btnSellGold.Name = "btnSellGold";
-            this.btnSellGold.Size = new System.Drawing.Size(95, 50);
+            this.btnSellGold.Size = new System.Drawing.Size(198, 40);
             this.btnSellGold.TabIndex = 7;
             this.btnSellGold.Text = "Sell Your Gold";
             this.btnSellGold.UseVisualStyleBackColor = true;
@@ -131,18 +143,22 @@
             // lblCurrentPrice
             // 
             this.lblCurrentPrice.AutoSize = true;
-            this.lblCurrentPrice.Location = new System.Drawing.Point(277, 109);
+            this.lblCurrentPrice.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurrentPrice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblCurrentPrice.Location = new System.Drawing.Point(315, 111);
             this.lblCurrentPrice.Name = "lblCurrentPrice";
-            this.lblCurrentPrice.Size = new System.Drawing.Size(44, 16);
+            this.lblCurrentPrice.Size = new System.Drawing.Size(55, 23);
             this.lblCurrentPrice.TabIndex = 8;
             this.lblCurrentPrice.Text = "label1";
             // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(424, 232);
+            this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTotal.Location = new System.Drawing.Point(626, 111);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(44, 16);
+            this.lblTotal.Size = new System.Drawing.Size(55, 23);
             this.lblTotal.TabIndex = 9;
             this.lblTotal.Text = "label1";
             this.lblTotal.Click += new System.EventHandler(this.lblTotal_Click);
@@ -161,28 +177,33 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(133, 109);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 16);
+            this.label1.Size = new System.Drawing.Size(176, 25);
             this.label1.TabIndex = 11;
             this.label1.Text = "Current Market Price:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(316, 232);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(488, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 16);
+            this.label2.Size = new System.Drawing.Size(132, 23);
             this.label2.TabIndex = 12;
             this.label2.Text = "Calculated Price";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(256, 27);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(230, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(259, 31);
+            this.label3.Size = new System.Drawing.Size(305, 37);
             this.label3.TabIndex = 13;
             this.label3.Text = "Invest In Your Future";
             // 
@@ -190,6 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

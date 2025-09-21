@@ -143,7 +143,7 @@ namespace Store.DataQ
         // Create (Register a New User)
         public int CreateUser(User user)
         {
-            string query = "INSERT INTO tblUser (Username, [Password], [Role], Email, Address, Mobile) VALUES (@Username, @Password, @Role, @Email, @Address, @Mobile); SELECT CAST(scope_identity() AS int);";
+            string query = "INSERT INTO tblUser (Username, [Password], [Role], Email, Address, Mobile, Branch) VALUES (@Username, @Password, @Role, @Email, @Address, @Mobile, @Branch); SELECT CAST(scope_identity() AS int);";
 
             SqlParameter[] parameters = new SqlParameter[]
             {
@@ -152,7 +152,8 @@ namespace Store.DataQ
                  new SqlParameter("@Role", user.Role),
                  new SqlParameter("@Email", user.Email),
                  new SqlParameter("@Address", user.Address),
-                 new SqlParameter("@Mobile", user.Mobile)
+                 new SqlParameter("@Mobile", user.Mobile),
+                 new SqlParameter("Branch", user.Branch)
 
             };
 
@@ -278,7 +279,9 @@ namespace Store.DataQ
                                 Role = reader.GetString(reader.GetOrdinal("Role")),
                                 Email = reader.GetString(reader.GetOrdinal("Email")),
                                 Address = reader.GetString(reader.GetOrdinal("Address")),
-                                Mobile = reader.GetString(reader.GetOrdinal("Mobile"))
+                                Mobile = reader.GetString(reader.GetOrdinal("Mobile")),
+                                Branch = reader.GetString(reader.GetOrdinal("Branch"))
+
                                 // Add other fields as necessary
                             };
                         }
@@ -476,7 +479,8 @@ namespace Store.DataQ
                           int karat,
                           decimal price,
                           int quantity,
-                          string paymentMethod)
+                          string paymentMethod,
+                          string branch)
         {
             // 1) First, load the user’s details
             string userSql = @"
@@ -495,9 +499,9 @@ namespace Store.DataQ
             // 2) Now insert into ProductsBuy with all columns
             string insert = @"
             INSERT INTO dbo.ProductsBuy
-            (UserID, Username, ProductName, Karat, Price, Quantity, PaymentMethod)
+            (UserID, Username, ProductName, Karat, Price, Quantity, PaymentMethod, Branch)
             VALUES
-            (@UserID, @Username, @ProductName, @Karat, @Price, @Quantity, @PaymentMethod)";
+            (@UserID, @Username, @ProductName, @Karat, @Price, @Quantity, @PaymentMethod, @Branch)";
 
 
             var parameters = new[]
@@ -508,7 +512,8 @@ namespace Store.DataQ
         new SqlParameter("@Karat",       karat),
         new SqlParameter("@Price",       price),
         new SqlParameter("@Quantity",    quantity),
-        new SqlParameter("@PaymentMethod", paymentMethod ?? (object)DBNull.Value),};
+        new SqlParameter("@PaymentMethod", paymentMethod ?? (object)DBNull.Value),
+        new SqlParameter("@Branch",    branch),};
 
             ExecuteNonQuery(insert, parameters);
         }
@@ -890,6 +895,65 @@ namespace Store.DataQ
                 throw new Exception("Error fetching sales data: " + ex.Message);
             }
             return dt;
+        }
+
+
+
+        public string GetUserBranchById(int userId)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    string query = "SELECT Branch FROM tblUser WHERE UserID = @UserID";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@UserID", userId);
+                        conn.Open();
+
+                        object result = cmd.ExecuteScalar();
+                        return result != null ? result.ToString() : string.Empty;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error fetching branch: {ex.Message}");
+            }
+        }
+
+        public void AddUserReview(int userId, string productName, int rating, string reviewText)
+        {
+            string query = @"
+            INSERT INTO UserReviews (UserID, Username, ProductName, Rating, ReviewText)
+            SELECT @UserID, Username, @ProductName, @Rating, @ReviewText
+            FROM tblUser WHERE UserID = @UserID";
+
+            SqlParameter[] ps = new[]
+            {
+                new SqlParameter("@UserID", userId),
+                new SqlParameter("@ProductName", string.IsNullOrEmpty(productName) ? (object)DBNull.Value : productName),
+                new SqlParameter("@Rating", rating),
+                new SqlParameter("@ReviewText", reviewText ?? (object)DBNull.Value)
+            };
+
+            ExecuteNonQuery(query, ps);
+        }
+
+
+        public DataTable GetAllUserReviews()
+        {
+            string query = @"SELECT [ReviewID],
+                            [UserID],
+                            [Username],
+                            [ProductName],
+                            [Rating],
+                            [ReviewText],
+                            [CreatedDate],
+                            [IsApproved]
+                     FROM [dbo].[UserReviews]
+                     ORDER BY CreatedDate DESC";
+            return ExecuteReader(query);
         }
 
 

@@ -25,6 +25,10 @@ namespace Store.Forms
             rolecomboBox.Items.Clear();
             rolecomboBox.Items.AddRange(new string[] { "Admin", "User" });
             rolecomboBox.SelectedIndex = -1;
+
+            comboBoxBranch.Items.Clear();
+            comboBoxBranch.Items.AddRange(new string[] { "Jashore","Kuril", "Banani", "Badda", "Mirpur", "Bashundhara", "Farmgate", "Uttara", "Joypurhat" });
+            comboBoxBranch.SelectedIndex = -1;
         }
 
         private void registerbutton_Click(object sender, EventArgs e)
@@ -36,10 +40,11 @@ namespace Store.Forms
             string address = Addresstext.Text.Trim();
             string mobile = mobiletext.Text.Trim();
             string role = rolecomboBox.SelectedItem?.ToString();
+            string branch = comboBoxBranch.SelectedItem?.ToString();
 
             // Input Validation
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(confirmPassword) ||
-                string.IsNullOrEmpty(email) || string.IsNullOrEmpty(address) || string.IsNullOrEmpty(mobile) || string.IsNullOrEmpty(role))
+                string.IsNullOrEmpty(email) || string.IsNullOrEmpty(address) || string.IsNullOrEmpty(mobile) || string.IsNullOrEmpty(role) || string.IsNullOrEmpty(branch))
             {
                 MessageBox.Show("Please fill in all required fields.", "Registration Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -77,7 +82,8 @@ namespace Store.Forms
                     Email = email,
                     Address = address,
                     Mobile = mobile,
-                    Role = role
+                    Role = role,
+                    Branch = branch
 
                 };
 
@@ -130,6 +136,11 @@ namespace Store.Forms
              this.Hide();
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

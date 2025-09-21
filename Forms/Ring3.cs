@@ -1,4 +1,5 @@
-﻿using Store.Models;
+﻿using Store.DataQ;
+using Store.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -90,8 +91,10 @@ namespace Store.Forms
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            DatabaseQ db = new DatabaseQ();
+
             this.Hide();
-            Rings ring3 = new Rings(currentUserId);
+            Rings ring3 = new Rings(currentUserId, db.GetUserBranchById(currentUserId));
             ring3.Show();
         }
     }

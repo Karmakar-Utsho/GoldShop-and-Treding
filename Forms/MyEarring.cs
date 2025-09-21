@@ -16,11 +16,13 @@ namespace Store.Forms
     {
 
         private readonly int currentUserId;
+        private readonly string currentBranchName;
         
-        public MyEarring(int userId)
+        public MyEarring(int userId, string branch)
         {
             InitializeComponent();
             this.currentUserId = userId;
+            this.currentBranchName = branch;
         }
 
         private void MyEarring_Load(object sender, EventArgs e)
@@ -31,7 +33,7 @@ namespace Store.Forms
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            JewellerySection jewellery = new JewellerySection(currentUserId);
+            JewellerySection jewellery = new JewellerySection(currentUserId, currentBranchName);
             jewellery.Show();
         }
 

@@ -19,11 +19,13 @@ namespace Store.Forms
         private readonly int currentUserId;
         private decimal unitPrice;
         private int quantity = 1;
+        private readonly string currentBranchName;
         private DatabaseQ db = new DatabaseQ();
-        public InvestmentSection(int userId)
+        public InvestmentSection(int userId, string currentBranchName)
         {
             InitializeComponent();
             currentUserId = userId;
+            this.currentBranchName = currentBranchName;
         }
 
         private void InvestmentSection_Load(object sender, EventArgs e)
@@ -54,7 +56,7 @@ namespace Store.Forms
             db.AddInvestment(currentUserId, user["Username"].ToString(),
                 quantity * (radio1g.Checked ? 1 : radio5g.Checked ? 5 : 10), Convert.ToDecimal(lblTotal.Text.Replace(" $", "")), unitPrice);
             MessageBox.Show("You have successfully invested in gold.");
-            new JewellerySection(currentUserId).Show();
+            new JewellerySection(currentUserId, currentBranchName).Show();
             Hide();
         }
 
@@ -86,7 +88,7 @@ namespace Store.Forms
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            JewellerySection jewellery = new JewellerySection(currentUserId);
+            JewellerySection jewellery = new JewellerySection(currentUserId, currentBranchName);
             jewellery.Show();
         }
 

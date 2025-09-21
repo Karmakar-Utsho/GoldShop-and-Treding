@@ -17,13 +17,16 @@ namespace Store.Forms
     {
         private readonly DatabaseQ db = new DatabaseQ();
         private int currentUserId;
+        private string currentBranchName;
+
 
         private string defaultKarat = "22";
 
-        public OrderVeiw(int userId)
+        public OrderVeiw(int userId, string currentBranchName)
         {
             InitializeComponent();
             this.currentUserId = userId;
+            this.currentBranchName = currentBranchName;
         }
 
         private void LoadProducts()
@@ -121,8 +124,8 @@ namespace Store.Forms
                         int qty = Convert.ToInt32(row.Cells["Quantity"].Value);
 
                         string query = @"INSERT INTO ProductsBuy 
-                                (UserID, ProductName, Karat, Price, Quantity, OrderDate, PaymentMethod, Username)
-                                VALUES (@UserID, @ProductName, @Karat, @Price, @Quantity, @OrderDate, @PaymentMethod, @Username)";
+                                (UserID, ProductName, Karat, Price, Quantity, OrderDate, PaymentMethod, Username, Branch)
+                                VALUES (@UserID, @ProductName, @Karat, @Price, @Quantity, @OrderDate, @PaymentMethod, @Username, @Branch)";
 
                         db.ExecuteQuery(query,
                             new SqlParameter("@UserID", currentUserId),
@@ -132,7 +135,8 @@ namespace Store.Forms
                             new SqlParameter("@Quantity", qty),
                             new SqlParameter("@OrderDate", DateTime.Now),
                             new SqlParameter("@PaymentMethod", "Cash"),
-                            new SqlParameter("@Username", currentUsername)  // ✅ now real username
+                            new SqlParameter("@Username", currentUsername),  // ✅ now real username
+                            new SqlParameter("@Branch", currentBranchName)
                         );
 
                         string updateQuery = @"UPDATE Product 
@@ -159,7 +163,7 @@ namespace Store.Forms
         private void buttonBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            JewellerySection jc = new JewellerySection(currentUserId);
+            JewellerySection jc = new JewellerySection(currentUserId, currentBranchName);
             jc.Show();
         }
     }

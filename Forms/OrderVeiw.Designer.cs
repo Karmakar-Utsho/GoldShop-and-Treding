@@ -36,6 +36,7 @@
             this.buttonAddToCart = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).BeginInit();
@@ -46,9 +47,9 @@
             this.panel1.Controls.Add(this.buttonConfirmOrder);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dataGridViewCart);
-            this.panel1.Location = new System.Drawing.Point(647, 0);
+            this.panel1.Location = new System.Drawing.Point(693, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(651, 696);
+            this.panel1.Size = new System.Drawing.Size(714, 684);
             this.panel1.TabIndex = 1;
             // 
             // buttonConfirmOrder
@@ -56,9 +57,9 @@
             this.buttonConfirmOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.buttonConfirmOrder.Font = new System.Drawing.Font("Segoe UI Historic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonConfirmOrder.ForeColor = System.Drawing.Color.White;
-            this.buttonConfirmOrder.Location = new System.Drawing.Point(266, 660);
+            this.buttonConfirmOrder.Location = new System.Drawing.Point(570, 646);
             this.buttonConfirmOrder.Name = "buttonConfirmOrder";
-            this.buttonConfirmOrder.Size = new System.Drawing.Size(144, 33);
+            this.buttonConfirmOrder.Size = new System.Drawing.Size(144, 45);
             this.buttonConfirmOrder.TabIndex = 12;
             this.buttonConfirmOrder.Text = "Confirm Order";
             this.buttonConfirmOrder.UseVisualStyleBackColor = false;
@@ -67,12 +68,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 58);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 25);
+            this.label1.Size = new System.Drawing.Size(143, 23);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Your Oder by";
+            this.label1.Text = "Your Oder List";
             // 
             // dataGridViewCart
             // 
@@ -81,17 +82,17 @@
             this.dataGridViewCart.Name = "dataGridViewCart";
             this.dataGridViewCart.RowHeadersWidth = 51;
             this.dataGridViewCart.RowTemplate.Height = 24;
-            this.dataGridViewCart.Size = new System.Drawing.Size(640, 554);
+            this.dataGridViewCart.Size = new System.Drawing.Size(706, 554);
             this.dataGridViewCart.TabIndex = 0;
             // 
             // dataGridViewProduct
             // 
             this.dataGridViewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProduct.Location = new System.Drawing.Point(12, 86);
+            this.dataGridViewProduct.Location = new System.Drawing.Point(12, 98);
             this.dataGridViewProduct.Name = "dataGridViewProduct";
             this.dataGridViewProduct.RowHeadersWidth = 51;
             this.dataGridViewProduct.RowTemplate.Height = 24;
-            this.dataGridViewProduct.Size = new System.Drawing.Size(618, 554);
+            this.dataGridViewProduct.Size = new System.Drawing.Size(667, 554);
             this.dataGridViewProduct.TabIndex = 1;
             // 
             // buttonAddToCart
@@ -99,9 +100,9 @@
             this.buttonAddToCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.buttonAddToCart.Font = new System.Drawing.Font("Segoe UI Historic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAddToCart.ForeColor = System.Drawing.Color.White;
-            this.buttonAddToCart.Location = new System.Drawing.Point(226, 663);
+            this.buttonAddToCart.Location = new System.Drawing.Point(535, 658);
             this.buttonAddToCart.Name = "buttonAddToCart";
-            this.buttonAddToCart.Size = new System.Drawing.Size(144, 33);
+            this.buttonAddToCart.Size = new System.Drawing.Size(144, 45);
             this.buttonAddToCart.TabIndex = 11;
             this.buttonAddToCart.Text = "Add to Cart";
             this.buttonAddToCart.UseVisualStyleBackColor = false;
@@ -110,8 +111,8 @@
             // buttonBack
             // 
             this.buttonBack.Font = new System.Drawing.Font("Segoe UI Historic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBack.ForeColor = System.Drawing.Color.Red;
-            this.buttonBack.Location = new System.Drawing.Point(12, 36);
+            this.buttonBack.ForeColor = System.Drawing.Color.Black;
+            this.buttonBack.Location = new System.Drawing.Point(12, 59);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(144, 33);
             this.buttonBack.TabIndex = 13;
@@ -121,17 +122,29 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.panel2.Location = new System.Drawing.Point(636, 86);
+            this.panel2.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel2.Location = new System.Drawing.Point(685, 70);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 554);
+            this.panel2.Size = new System.Drawing.Size(10, 633);
             this.panel2.TabIndex = 14;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label5.Location = new System.Drawing.Point(490, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(390, 40);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Crown Unity Jewellery ";
             // 
             // OrderVeiw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1310, 746);
+            this.ClientSize = new System.Drawing.Size(1419, 746);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonAddToCart);
@@ -145,6 +158,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -158,5 +172,6 @@
         private System.Windows.Forms.Button buttonAddToCart;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label5;
     }
 }

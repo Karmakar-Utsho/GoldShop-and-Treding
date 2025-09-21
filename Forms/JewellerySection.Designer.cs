@@ -29,16 +29,19 @@
         private void InitializeComponent()
         {
             this.Profilebutton = new System.Windows.Forms.Button();
-            this.necklace30 = new System.Windows.Forms.PictureBox();
-            this.earring10 = new System.Windows.Forms.PictureBox();
-            this.ringpic20 = new System.Windows.Forms.PictureBox();
-            this.signoutbutton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.labelOrderView = new System.Windows.Forms.Label();
+            this.labelBranch = new System.Windows.Forms.Label();
+            this.buttonRating = new System.Windows.Forms.Button();
+            this.necklace30 = new System.Windows.Forms.PictureBox();
+            this.earring10 = new System.Windows.Forms.PictureBox();
+            this.ringpic20 = new System.Windows.Forms.PictureBox();
+            this.signoutbutton = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.necklace30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.earring10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ringpic20)).BeginInit();
@@ -46,13 +49,106 @@
             // 
             // Profilebutton
             // 
-            this.Profilebutton.Location = new System.Drawing.Point(12, 16);
+            this.Profilebutton.BackColor = System.Drawing.Color.OrangeRed;
+            this.Profilebutton.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Profilebutton.Location = new System.Drawing.Point(12, 20);
             this.Profilebutton.Name = "Profilebutton";
-            this.Profilebutton.Size = new System.Drawing.Size(88, 41);
+            this.Profilebutton.Size = new System.Drawing.Size(124, 41);
             this.Profilebutton.TabIndex = 0;
             this.Profilebutton.Text = "My Profile";
-            this.Profilebutton.UseVisualStyleBackColor = true;
+            this.Profilebutton.UseVisualStyleBackColor = false;
             this.Profilebutton.Click += new System.EventHandler(this.Profilebutton_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(157, 423);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 23);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Ring";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(458, 423);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 23);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Earrings";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(760, 423);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 23);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Necklace";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(789, 490);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(199, 38);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Invest in Gold";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Yellow;
+            this.label5.Location = new System.Drawing.Point(293, 20);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(395, 44);
+            this.label5.TabIndex = 9;
+            this.label5.Text = " Jewellery Collection";
+            // 
+            // labelOrderView
+            // 
+            this.labelOrderView.AutoSize = true;
+            this.labelOrderView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.labelOrderView.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOrderView.ForeColor = System.Drawing.Color.Linen;
+            this.labelOrderView.Location = new System.Drawing.Point(377, 489);
+            this.labelOrderView.Name = "labelOrderView";
+            this.labelOrderView.Size = new System.Drawing.Size(243, 37);
+            this.labelOrderView.TabIndex = 10;
+            this.labelOrderView.Text = "Buy Other Items";
+            this.labelOrderView.Click += new System.EventHandler(this.labelOrderView_Click);
+            // 
+            // labelBranch
+            // 
+            this.labelBranch.AutoSize = true;
+            this.labelBranch.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBranch.ForeColor = System.Drawing.Color.Teal;
+            this.labelBranch.Location = new System.Drawing.Point(47, 97);
+            this.labelBranch.Name = "labelBranch";
+            this.labelBranch.Size = new System.Drawing.Size(166, 31);
+            this.labelBranch.TabIndex = 11;
+            this.labelBranch.Text = "Branch name";
+            // 
+            // buttonRating
+            // 
+            this.buttonRating.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.buttonRating.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRating.ForeColor = System.Drawing.Color.White;
+            this.buttonRating.Location = new System.Drawing.Point(12, 493);
+            this.buttonRating.Name = "buttonRating";
+            this.buttonRating.Size = new System.Drawing.Size(180, 41);
+            this.buttonRating.TabIndex = 12;
+            this.buttonRating.Text = "Rate Our Service";
+            this.buttonRating.UseVisualStyleBackColor = false;
+            this.buttonRating.Click += new System.EventHandler(this.buttonRating_Click);
             // 
             // necklace30
             // 
@@ -91,78 +187,33 @@
             // 
             this.signoutbutton.BackgroundImage = global::Store.Properties.Resources.sign_out;
             this.signoutbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.signoutbutton.Location = new System.Drawing.Point(884, 12);
+            this.signoutbutton.Location = new System.Drawing.Point(916, 25);
             this.signoutbutton.Name = "signoutbutton";
             this.signoutbutton.Size = new System.Drawing.Size(72, 39);
             this.signoutbutton.TabIndex = 1;
             this.signoutbutton.UseVisualStyleBackColor = true;
             this.signoutbutton.Click += new System.EventHandler(this.signoutbutton_Click);
             // 
-            // label1
+            // label6
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(157, 423);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 16);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Ring";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(458, 423);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 16);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Earrings";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(760, 423);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 16);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Necklace";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(831, 80);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 20);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Invest in Gold";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(299, 20);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(384, 31);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Welcome to our Jewellery Store";
-            // 
-            // labelOrderView
-            // 
-            this.labelOrderView.AutoSize = true;
-            this.labelOrderView.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelOrderView.Location = new System.Drawing.Point(899, 493);
-            this.labelOrderView.Name = "labelOrderView";
-            this.labelOrderView.Size = new System.Drawing.Size(57, 20);
-            this.labelOrderView.TabIndex = 10;
-            this.labelOrderView.Text = "Order";
-            this.labelOrderView.Click += new System.EventHandler(this.labelOrderView_Click);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(393, 90);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(214, 38);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Featured Items";
             // 
             // JewellerySection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.ClientSize = new System.Drawing.Size(982, 553);
+            this.BackColor = System.Drawing.Color.Teal;
+            this.ClientSize = new System.Drawing.Size(1010, 560);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.buttonRating);
+            this.Controls.Add(this.labelBranch);
             this.Controls.Add(this.labelOrderView);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -174,6 +225,7 @@
             this.Controls.Add(this.ringpic20);
             this.Controls.Add(this.signoutbutton);
             this.Controls.Add(this.Profilebutton);
+            this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "JewellerySection";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "JewellerySection";
@@ -199,5 +251,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label labelOrderView;
+        private System.Windows.Forms.Label labelBranch;
+        private System.Windows.Forms.Button buttonRating;
+        private System.Windows.Forms.Label label6;
     }
 }

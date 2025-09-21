@@ -65,8 +65,10 @@ namespace Store.Forms
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            DatabaseQ db = new DatabaseQ();
+
             this.Hide();
-            InvestmentSection investmentsection = new InvestmentSection(currentUserId);
+            InvestmentSection investmentsection = new InvestmentSection(currentUserId, db.GetUserBranchById(currentUserId));
             investmentsection.Show();
         }
 
@@ -83,10 +85,12 @@ namespace Store.Forms
 
         private void btnSell_Click(object sender, EventArgs e)
         {
+            DatabaseQ db = new DatabaseQ();
+
             decimal totalRecv = quantity * currentPrice;
             db.AddSell(investmentId, quantity, totalRecv);
             MessageBox.Show("Gold sold.");
-            new InvestmentSection(currentUserId).Show(); Hide();
+            new InvestmentSection(currentUserId, db.GetUserBranchById(currentUserId)).Show(); Hide();
         }
     }
 }

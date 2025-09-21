@@ -99,3 +99,11 @@ C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.
 C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.ProductManagement.resources
 C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Properties.ProductSellList.resources
 C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Properties.UserManage.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Properties.BranchManagement.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Properties.BranchProductManagement.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Properties.BranchReports.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Properties.BranchSalesManagement.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Properties.BranchUserManagement.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Forms.ReviewForm.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Properties.Review.resources
+C:\Users\Utsho\Desktop\The Gold Shop\GoldShop and Treding\obj\Debug\Store.Properties.UserReview.resources

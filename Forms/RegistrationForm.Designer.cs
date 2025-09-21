@@ -54,6 +54,9 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.comboBoxBranch = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -62,6 +65,7 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -183,7 +187,7 @@
             this.registerbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.registerbutton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerbutton.ForeColor = System.Drawing.Color.White;
-            this.registerbutton.Location = new System.Drawing.Point(187, 457);
+            this.registerbutton.Location = new System.Drawing.Point(187, 518);
             this.registerbutton.Name = "registerbutton";
             this.registerbutton.Size = new System.Drawing.Size(317, 38);
             this.registerbutton.TabIndex = 12;
@@ -196,7 +200,7 @@
             this.cancelbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.cancelbutton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancelbutton.ForeColor = System.Drawing.Color.White;
-            this.cancelbutton.Location = new System.Drawing.Point(187, 514);
+            this.cancelbutton.Location = new System.Drawing.Point(187, 575);
             this.cancelbutton.Name = "cancelbutton";
             this.cancelbutton.Size = new System.Drawing.Size(317, 37);
             this.cancelbutton.TabIndex = 13;
@@ -231,7 +235,7 @@
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.label8.Location = new System.Drawing.Point(60, 18);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(453, 40);
+            this.label8.Size = new System.Drawing.Size(441, 40);
             this.label8.TabIndex = 16;
             this.label8.Text = "Fill All the Fields to Register";
             // 
@@ -309,18 +313,51 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(58, 442);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 503);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(117, 109);
+            this.pictureBox1.Size = new System.Drawing.Size(163, 109);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.panel8.Controls.Add(this.label9);
+            this.panel8.Controls.Add(this.comboBoxBranch);
+            this.panel8.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel8.Location = new System.Drawing.Point(56, 451);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(446, 34);
+            this.panel8.TabIndex = 23;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(2, 5);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 23);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Branch";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // comboBoxBranch
+            // 
+            this.comboBoxBranch.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxBranch.FormattingEnabled = true;
+            this.comboBoxBranch.Location = new System.Drawing.Point(129, 2);
+            this.comboBoxBranch.Name = "comboBoxBranch";
+            this.comboBoxBranch.Size = new System.Drawing.Size(314, 29);
+            this.comboBoxBranch.TabIndex = 14;
             // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 586);
+            this.ClientSize = new System.Drawing.Size(558, 676);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel7);
@@ -351,6 +388,8 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -383,5 +422,8 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox comboBoxBranch;
     }
 }

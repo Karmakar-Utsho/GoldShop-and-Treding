@@ -114,7 +114,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label3.Location = new System.Drawing.Point(394, 26);
+            this.label3.Location = new System.Drawing.Point(474, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(260, 40);
             this.label3.TabIndex = 7;

@@ -14,37 +14,39 @@ namespace Store.Forms
     public partial class JewellerySection : Form
     {
         private int currentUserId;
+        private string currentBranchName;
 
-        public JewellerySection(int userId)
+        public JewellerySection(int userId, string branch)
         {
             InitializeComponent();
             this.currentUserId = userId;
+            this.currentBranchName = branch;
             
         }
 
         private void JewellerySection_Load(object sender, EventArgs e)
         {
-
+            labelBranch.Text = $"Welcome to {currentBranchName} branch...";
         }
 
         private void ringpic20_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Rings R1 = new Rings(currentUserId);
+            Rings R1 = new Rings(currentUserId, currentBranchName);
             R1.Show();
         }
 
         private void earring10_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MyEarring E1 = new MyEarring(currentUserId);
+            MyEarring E1 = new MyEarring(currentUserId, currentBranchName);
             E1.Show();
         }
 
         private void necklace30_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Necklaces N1 = new Necklaces(currentUserId);
+            Necklaces N1 = new Necklaces(currentUserId, currentBranchName);
             N1.Show();
         }
 
@@ -62,22 +64,29 @@ namespace Store.Forms
         private void Profilebutton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MyUserProfile myuserprofile = new MyUserProfile(currentUserId);
+            MyUserProfile myuserprofile = new MyUserProfile(currentUserId, currentBranchName);
             myuserprofile.Show();
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            InvestmentSection investmentsection = new InvestmentSection(currentUserId);
+            InvestmentSection investmentsection = new InvestmentSection(currentUserId, currentBranchName);
             investmentsection.Show();
         }
 
         private void labelOrderView_Click(object sender, EventArgs e)
         {
             this.Hide();
-            OrderVeiw ov = new OrderVeiw(currentUserId);
+            OrderVeiw ov = new OrderVeiw(currentUserId, currentBranchName);
             ov.Show();
         }
+
+        private void buttonRating_Click(object sender, EventArgs e)
+        {
+            ReviewForm reviewForm = new ReviewForm(currentUserId, currentBranchName);
+            reviewForm.ShowDialog();
+        }
+
     }
 }

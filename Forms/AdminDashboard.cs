@@ -67,5 +67,22 @@ namespace Store
             BillManagement bm = new BillManagement();
             bm.Show();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            UserReview r = new UserReview();
+            r.Show();
+        }
     }
 }
+

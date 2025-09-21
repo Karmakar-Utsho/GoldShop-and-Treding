@@ -21,6 +21,7 @@ namespace Store.Models
         public DateTime CreatedDate { get; set; }
         public DateTime? UpdatedDate { get; set; }
         public int IsActive { get; set; }
+        public string Branch { get; set; }
 
     }
 }

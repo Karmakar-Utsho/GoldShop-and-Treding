@@ -20,7 +20,6 @@ namespace Store.Forms
         private readonly CartItem cartItem;
         private readonly DatabaseQ dbHelper = new DatabaseQ();
 
-
         public PaymentForm(int userId, CartItem item)
         {
             InitializeComponent();
@@ -42,6 +41,8 @@ namespace Store.Forms
                 : radiocash.Checked ? "CashOnDelivery"
                 : null;
 
+            string branch = dbHelper.GetUserBranchById(currentUserId);
+
             // Delegate to DatabaseQ
             dbHelper.AddProductBuy(
                 currentUserId,
@@ -49,13 +50,14 @@ namespace Store.Forms
                 cartItem.Karat,
                 cartItem.Price,
                 cartItem.Quantity,
-                paymentMethod
+                paymentMethod,
+                branch
             );
 
             MessageBox.Show("Your order is confirmed!", "Order Placed",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            var jewellery = new JewellerySection(currentUserId);
+            var jewellery = new JewellerySection(currentUserId, dbHelper.GetUserBranchById(currentUserId));
             this.Hide();
             jewellery.Show();
 
@@ -63,7 +65,7 @@ namespace Store.Forms
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

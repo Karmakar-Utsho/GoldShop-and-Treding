@@ -1,4 +1,5 @@
-﻿using Store.Models;
+﻿using Store.DataQ;
+using Store.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -77,8 +78,10 @@ namespace Store.Forms
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            DatabaseQ db = new DatabaseQ();
+
             this.Hide();
-            Necklaces buy6 = new Necklaces(currentUserId);
+            Necklaces buy6 = new Necklaces(currentUserId, db.GetUserBranchById(currentUserId));
             buy6.Show();
         }
 

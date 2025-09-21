@@ -14,10 +14,12 @@ namespace Store.Forms
     {
 
         private readonly int currentUserId;
-        public Necklaces(int userId)
+        private readonly string currentBranchName;
+        public Necklaces(int userId, string currentBranchName)
         {
             InitializeComponent();
             this.currentUserId = userId;
+            this.currentBranchName = currentBranchName;
         }
 
         private void Necklaces_Load(object sender, EventArgs e)
@@ -28,7 +30,7 @@ namespace Store.Forms
         private void backpic_Click(object sender, EventArgs e)
         {
             this.Hide();
-            JewellerySection jewellery = new JewellerySection(currentUserId);
+            JewellerySection jewellery = new JewellerySection(currentUserId, currentBranchName);
             jewellery.Show();
         }
 

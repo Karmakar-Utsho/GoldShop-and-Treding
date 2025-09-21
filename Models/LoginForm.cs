@@ -137,7 +137,7 @@ namespace Store
                     if (user != null)
                     {
                         // Instantiate the JewelleryDashboard with the correct AuthorID
-                        JewellerySection jewellery = new JewellerySection(user.UserID);
+                        JewellerySection jewellery = new JewellerySection(user.UserID, user.Branch);
                         jewellery.Show();
                     }
                     else

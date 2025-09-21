@@ -17,6 +17,7 @@ namespace Store.Forms
     {
 
         private readonly int currentUserId;
+        private readonly string currentBranchName;
         private readonly DatabaseQ dbHelper;
 
         // You can still use an absolute path if you wish:
@@ -26,7 +27,7 @@ namespace Store.Forms
         //private readonly string profileImagePath;
 
 
-        public MyUserProfile(int currentUserId)
+        public MyUserProfile(int currentUserId, string currentBranchName)
         {
             InitializeComponent();
             usernametextBox.ReadOnly = true;
@@ -39,6 +40,7 @@ namespace Store.Forms
             EnsureProfileDirectoryExists();
 
             pbProfilePicture.SizeMode = PictureBoxSizeMode.Zoom;
+            this.currentBranchName = currentBranchName;
         }
 
         private void MyUserProfile_Load(object sender, EventArgs e)
@@ -249,7 +251,7 @@ namespace Store.Forms
         private void backpic_Click(object sender, EventArgs e)
         {
             this.Hide();
-            JewellerySection jewellery = new JewellerySection(currentUserId);
+            JewellerySection jewellery = new JewellerySection(currentUserId, currentBranchName);
             jewellery.Show();
         }
 

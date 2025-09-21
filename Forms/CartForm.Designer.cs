@@ -43,44 +43,54 @@
             // lblProuct
             // 
             this.lblProuct.AutoSize = true;
-            this.lblProuct.Location = new System.Drawing.Point(395, 126);
+            this.lblProuct.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProuct.ForeColor = System.Drawing.Color.White;
+            this.lblProuct.Location = new System.Drawing.Point(429, 119);
             this.lblProuct.Name = "lblProuct";
-            this.lblProuct.Size = new System.Drawing.Size(44, 16);
+            this.lblProuct.Size = new System.Drawing.Size(59, 23);
             this.lblProuct.TabIndex = 0;
             this.lblProuct.Text = "label1";
             // 
             // lblKarat
             // 
             this.lblKarat.AutoSize = true;
-            this.lblKarat.Location = new System.Drawing.Point(395, 176);
+            this.lblKarat.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKarat.ForeColor = System.Drawing.Color.White;
+            this.lblKarat.Location = new System.Drawing.Point(429, 169);
             this.lblKarat.Name = "lblKarat";
-            this.lblKarat.Size = new System.Drawing.Size(44, 16);
+            this.lblKarat.Size = new System.Drawing.Size(59, 23);
             this.lblKarat.TabIndex = 1;
             this.lblKarat.Text = "label2";
             // 
             // lblQuantity
             // 
             this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Location = new System.Drawing.Point(395, 230);
+            this.lblQuantity.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantity.ForeColor = System.Drawing.Color.White;
+            this.lblQuantity.Location = new System.Drawing.Point(429, 218);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(44, 16);
+            this.lblQuantity.Size = new System.Drawing.Size(59, 23);
             this.lblQuantity.TabIndex = 2;
             this.lblQuantity.Text = "label3";
             // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(395, 277);
+            this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.ForeColor = System.Drawing.Color.White;
+            this.lblTotal.Location = new System.Drawing.Point(428, 270);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(44, 16);
+            this.lblTotal.Size = new System.Drawing.Size(59, 23);
             this.lblTotal.TabIndex = 3;
             this.lblTotal.Text = "label4";
             // 
             // btnProceed
             // 
-            this.btnProceed.Location = new System.Drawing.Point(289, 344);
+            this.btnProceed.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProceed.ForeColor = System.Drawing.Color.ForestGreen;
+            this.btnProceed.Location = new System.Drawing.Point(279, 371);
             this.btnProceed.Name = "btnProceed";
-            this.btnProceed.Size = new System.Drawing.Size(183, 33);
+            this.btnProceed.Size = new System.Drawing.Size(220, 33);
             this.btnProceed.TabIndex = 4;
             this.btnProceed.Text = "Proced to Payment";
             this.btnProceed.UseVisualStyleBackColor = true;
@@ -89,46 +99,55 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(274, 126);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(286, 119);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 16);
+            this.label1.Size = new System.Drawing.Size(125, 23);
             this.label1.TabIndex = 5;
             this.label1.Text = "Product Name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(329, 176);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(286, 169);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 16);
+            this.label2.Size = new System.Drawing.Size(53, 23);
             this.label2.TabIndex = 6;
             this.label2.Text = "Karat";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(312, 230);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(286, 218);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 16);
+            this.label3.Size = new System.Drawing.Size(80, 23);
             this.label3.TabIndex = 7;
             this.label3.Text = "Quantity";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(330, 277);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(286, 270);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 16);
+            this.label4.Size = new System.Drawing.Size(50, 23);
             this.label4.TabIndex = 8;
             this.label4.Text = "price";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(272, 25);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(200, 31);
+            this.label5.Size = new System.Drawing.Size(257, 37);
             this.label5.TabIndex = 9;
             this.label5.Text = "Check Your Cart";
             // 
@@ -136,6 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);

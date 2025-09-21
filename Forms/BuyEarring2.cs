@@ -1,4 +1,5 @@
-﻿using Store.Forms;
+﻿using Store.DataQ;
+using Store.Forms;
 using Store.Models;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,8 @@ namespace Store.Forms
         private decimal basePrice = 700;
         private int selectedKarat = 18;
         private int quantity = 1;
+        DatabaseQ db = new DatabaseQ();
+
         public BuyEarring2(int userId)
         {
             InitializeComponent();
@@ -101,7 +104,7 @@ namespace Store.Forms
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MyEarring ear1 = new MyEarring(currentUserId);
+            MyEarring ear1 = new MyEarring(currentUserId, db.GetUserBranchById(currentUserId));
             ear1.Show();
         }
     }

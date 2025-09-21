@@ -49,6 +49,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -58,7 +60,7 @@
             // 
             // textBoxSearch
             // 
-            this.textBoxSearch.Location = new System.Drawing.Point(545, 27);
+            this.textBoxSearch.Location = new System.Drawing.Point(511, 67);
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.Size = new System.Drawing.Size(318, 22);
             this.textBoxSearch.TabIndex = 0;
@@ -73,9 +75,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label1.Location = new System.Drawing.Point(468, 27);
+            this.label1.Location = new System.Drawing.Point(434, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 22);
             this.label1.TabIndex = 2;
@@ -140,7 +142,7 @@
             this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.buttonAdd.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonAdd.Location = new System.Drawing.Point(151, 334);
+            this.buttonAdd.Location = new System.Drawing.Point(151, 415);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(106, 41);
             this.buttonAdd.TabIndex = 9;
@@ -153,7 +155,7 @@
             this.buttonUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.buttonUpdate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUpdate.ForeColor = System.Drawing.Color.White;
-            this.buttonUpdate.Location = new System.Drawing.Point(285, 334);
+            this.buttonUpdate.Location = new System.Drawing.Point(285, 415);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(102, 41);
             this.buttonUpdate.TabIndex = 10;
@@ -166,7 +168,7 @@
             this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.buttonDelete.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDelete.ForeColor = System.Drawing.Color.White;
-            this.buttonDelete.Location = new System.Drawing.Point(415, 334);
+            this.buttonDelete.Location = new System.Drawing.Point(415, 415);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(104, 41);
             this.buttonDelete.TabIndex = 11;
@@ -177,7 +179,7 @@
             // dataGridViewProduct
             // 
             this.dataGridViewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProduct.Location = new System.Drawing.Point(546, 71);
+            this.dataGridViewProduct.Location = new System.Drawing.Point(546, 128);
             this.dataGridViewProduct.Name = "dataGridViewProduct";
             this.dataGridViewProduct.RowHeadersWidth = 51;
             this.dataGridViewProduct.RowTemplate.Height = 24;
@@ -208,7 +210,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.textBoxProductName);
-            this.panel1.Location = new System.Drawing.Point(9, 71);
+            this.panel1.Location = new System.Drawing.Point(9, 152);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(513, 36);
             this.panel1.TabIndex = 15;
@@ -218,7 +220,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.textBoxCategory);
-            this.panel2.Location = new System.Drawing.Point(9, 128);
+            this.panel2.Location = new System.Drawing.Point(9, 209);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(513, 36);
             this.panel2.TabIndex = 16;
@@ -228,7 +230,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.textBoxPrice);
-            this.panel3.Location = new System.Drawing.Point(9, 185);
+            this.panel3.Location = new System.Drawing.Point(9, 266);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(513, 36);
             this.panel3.TabIndex = 16;
@@ -238,24 +240,46 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.textBoxQuantity);
-            this.panel4.Location = new System.Drawing.Point(9, 240);
+            this.panel4.Location = new System.Drawing.Point(9, 321);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(513, 36);
             this.panel4.TabIndex = 16;
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.DarkKhaki;
-            this.panel5.Location = new System.Drawing.Point(530, 71);
+            this.panel5.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel5.Location = new System.Drawing.Point(530, 122);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(10, 517);
             this.panel5.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label6.Location = new System.Drawing.Point(480, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(275, 45);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Product Manage";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel6.ForeColor = System.Drawing.Color.DarkOrange;
+            this.panel6.Location = new System.Drawing.Point(-13, 112);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1342, 10);
+            this.panel6.TabIndex = 19;
             // 
             // ProductManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1320, 600);
+            this.ClientSize = new System.Drawing.Size(1320, 651);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
@@ -306,5 +330,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel6;
     }
 }

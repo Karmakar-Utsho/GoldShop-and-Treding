@@ -1,4 +1,5 @@
-﻿using Store.Forms;
+﻿using Store.DataQ;
+using Store.Forms;
 using Store.Models;
 using System;
 using System.Collections.Generic;
@@ -97,8 +98,9 @@ namespace Store.Forms
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            DatabaseQ db = new DatabaseQ();
             this.Hide();
-            MyEarring ear2 = new MyEarring(currentUserId);
+            MyEarring ear2 = new MyEarring(currentUserId, db.GetUserBranchById(currentUserId));
             ear2.Show();
         }
     }

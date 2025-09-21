@@ -13,11 +13,13 @@ namespace Store.Forms
     public partial class Rings : Form
     {
         private readonly int currentUserId;
+        private readonly string currentBranchName;
 
-        public Rings(int userId)
+        public Rings(int userId, string currentBranchName)
         {
             InitializeComponent();
             this.currentUserId = userId;
+            this.currentBranchName = currentBranchName;
         }
 
         private void Rings_Load(object sender, EventArgs e)
@@ -28,7 +30,7 @@ namespace Store.Forms
         private void backpic_Click(object sender, EventArgs e)
         {
             this.Hide();
-            JewellerySection jewellery = new JewellerySection(currentUserId);
+            JewellerySection jewellery = new JewellerySection(currentUserId, currentBranchName);
             jewellery.Show();
         }
 
