@@ -174,13 +174,28 @@ The system follows a layered architecture approach:
 ## 📸 Screenshots
 
 The system includes intuitive interfaces for:
+
 - Login and Registration pages
+<img width="907" height="578" alt="image" src="https://github.com/user-attachments/assets/66afca3b-eeb7-454f-afe8-26a683e2953b" />
+  
 - Admin dashboard and management panels
+ <img width="940" height="582" alt="image" src="https://github.com/user-attachments/assets/4de85a68-e25e-4e91-8e8d-f2e7210f0e39" />
+
 - Customer shopping interface
+ <img width="959" height="615" alt="image" src="https://github.com/user-attachments/assets/1360a49c-b4b5-4457-a52c-e7ce11ff5eb9" />
+
 - Product catalogs and detailed views
+ <img width="953" height="565" alt="image" src="https://github.com/user-attachments/assets/341d4ac2-b23b-400e-8cbb-e3683b89c294" />
+
 - Payment processing screens
+<img width="952" height="691" alt="image" src="https://github.com/user-attachments/assets/68ba0ec1-3950-4749-86a0-da3527ba398d" />
+
 - Investment management interface
+  <img width="948" height="355" alt="image" src="https://github.com/user-attachments/assets/f8ffdcbe-cfb3-4bd2-8407-7304ad2c615c" />
+
 - Review and rating system
+  <img width="853" height="584" alt="image" src="https://github.com/user-attachments/assets/bce42faa-932f-42bf-bf26-e3dc59852ddb" />
+
 
 ## 🤝 Contributing
 
